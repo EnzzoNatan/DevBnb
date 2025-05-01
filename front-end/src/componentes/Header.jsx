@@ -1,19 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
     <div className='shadow-md'>
-      <div className='flex mx-auto max-w-7xl items-center justify-between px-8 py-4'>
+      <div className='flex mx-auto max-w-7xl items-center justify-between px-4 py-4 sm:px-8'>
             
             {/* Logo e nome */}
-            <div className='flex items-center'>
+            <Link to='/' className='flex items-center'>
                 <img 
                 className = "h-10" src="./src/assets/logo.png" alt="Logo do projeto" />
                 <p className='text-2xl font-bold text-primary-400'>DevBnb</p>
-            </div>
+            </Link>
             
             {/* Pesquisa */}
-            <div className='flex items-center border border-gray-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
+            <Link to='/' className='hidden lg:flex items-center border border-gray-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
+                
                 <p className='border-r border-r-gray-300 pr-4'>Qualquer Lugar</p>
                 <p className='border-r border-r-gray-300 px-4'>Qualquer Semana</p>
                 <p className='px-4'>Hóspedes</p>
@@ -24,10 +26,10 @@ const Header = () => {
                     </svg>
                 </div>
             
-            </div>
+            </Link>
             
             {/* Login */}
-            <div className='flex items-center border border-gray-300 rounded-full pr-4 pl-6 py-2 shadow-md gap-2'>
+            <Link to ='/login' className='flex items-center border border-gray-300 rounded-full pr-4 pl-6 py-2 shadow-md gap-2'>
                
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5">
                 <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
@@ -39,10 +41,10 @@ const Header = () => {
                 </svg>
                 
                 
-                <p>Nome</p>
+                <p className='max-w-20 truncate sm:max-w-32'>Nome</p>
 
 
-            </div>
+            </Link>
     
         </div>
     </div>
