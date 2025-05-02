@@ -1,7 +1,7 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Poppins:wght@300;400;500;600&display=swap');
 
 @theme {
     --color-primary-400: #006ff0;
-    --color-tahiti: #3ab7bf;
-    --color-bermuda: #78dcca;
+    --font-DevBnb: "Poppins", sans-serif;
   }
